@@ -13,6 +13,7 @@ module.exports = {
     "react"
   ],
   "rules": {
+    "semi": ["error", "never"],
     "comma-dangle": ["error", "never"],
     "global-require": 0,
     "prefer-arrow-callback": 0,

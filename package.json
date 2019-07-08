@@ -1,9 +1,9 @@
 {
-  "name": "react-component-boilerplate",
-  "description": "Boilerplate for React.js components",
-  "author": "Juho Vepsalainen",
-  "user": "survivejs",
-  "version": "6.1.2",
+  "name": "react-made-by-getapper",
+  "description": "React Made-By-Getapper Widget",
+  "author": "Getapper",
+  "user": "antoniogiordano",
+  "version": "0.0.0",
   "scripts": {
     "start": "catalog start docs",
     "test": "jest",
@@ -59,11 +59,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/survivejs/react-component-boilerplate.git"
+    "url": "https://github.com/getapper/react-made-by-getapper"
   },
-  "homepage": "https://survivejs.github.io/react-component-boilerplate/",
+  "homepage": "http://getapper.com",
   "bugs": {
-    "url": "https://github.com/survivejs/react-component-boilerplate/issues"
+    "url": "https://github.com/getapper/react-made-by-getapper/issues"
   },
   "jest": {
     "collectCoverage": true,
@@ -84,5 +84,11 @@
   "license": "MIT",
   "pre-push": [
     "test"
-  ]
+  ],
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "jss-nested": "6.0.1",
+    "prop-types": "15.7.2",
+    "react-jss": "8.6.1"
+  }
 }
