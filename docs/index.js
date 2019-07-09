@@ -40,7 +40,10 @@ ReactDOM.render(
       }}
       title="Boilerplate"
     />
-    <MadeByGetapper radius={50} />
+    <MadeByGetapper
+      radius={60}
+      themeType="light"
+    />
   </div>,
   document.getElementById('catalog')
 )
