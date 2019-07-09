@@ -3,6 +3,8 @@ import { number, oneOf, shape } from 'prop-types'
 import injectSheet, { jss, ThemeProvider } from 'react-jss'
 import jssNested from 'jss-nested'
 
+import './font.css'
+
 jss.use(jssNested())
 
 const getapperLogo = 'data:image/svg+xml;base64,PHN2ZyBpZD0iTGl2ZWxsb18xIiBkYXRhLW5hbWU9IkxpdmVsbG8gMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTUuNzIgNTIuMDIiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojODdiZWQ4O30uY2xzLTJ7ZmlsbDojNzA5OGFlO308L3N0eWxlPjwvZGVmcz48dGl0bGU+bG9nbzwvdGl0bGU+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjMuNzQgMzEuNzcgMjUuMzUgNTIuMDIgMjguODkgNDUuOTkgMCAxOS41OSAzLjc0IDMxLjc3Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjI1LjA0IDE2LjQ4IDQzLjAyIDIxLjc3IDQ2LjUzIDE1Ljc0IDI1LjA0IDE2LjQ4Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjYuOTkgNS43NSAwLjUzIDE2Ljg5IDMwLjI4IDQzLjcxIDM3Ljk1IDMwLjU4IDE3LjQzIDE1LjI1IDQ4LjA4IDEzLjEzIDU1LjczIDAgNi45OSA1Ljc1Ii8+PC9zdmc+'
@@ -13,7 +15,7 @@ const getapperLogoPositive = 'data:image/svg+xml;base64,PHN2ZyBpZD0iTGl2ZWxsb18x
 const styles = (theme) => {
   const { radius, shadow } = theme
   const size = radius * 0.4
-  const width = Math.max(200, radius * 2)
+  const width = Math.max(180, radius * 2)
 
   return ({
     '@keyframes spin': {
@@ -35,7 +37,8 @@ const styles = (theme) => {
     wrapper: {
       color: theme.color,
       font: {
-        size: 12
+        family: '"futura-pt",sans-serif',
+        size: 15
       },
       textAlign: 'left',
       textDecoration: 'none',
@@ -59,7 +62,6 @@ const styles = (theme) => {
       transition: 'all ease-out .33s',
       '&:hover': {
         right: 0,
-        opacity: 0.7,
         '& $logo': {
           animation: {
             name: 'spinback',
@@ -78,6 +80,11 @@ const styles = (theme) => {
         name: 'spin',
         duration: '.5s'
       }
+    },
+    text: {
+      padding: {
+        bottom: radius * 0.15
+      }
     }
   })
 }
@@ -94,7 +101,7 @@ const Comp = ({ classes, themeType }) => (
       className={classes.logo}
       src={themeType === 'light' ? getapperLogo : getapperLogoPositive}
     />
-    <span>made by getapper</span>
+    <span className={classes.text}>Made by getapper</span>
   </a>
 )
 
@@ -107,8 +114,8 @@ const StyledComp = injectSheet(styles)(Comp)
 
 const theme = (radius, isLight) => ({
   background: isLight ? '#fff' : '#222',
-  color: isLight ? '#24292e' : '#fff',
-  shadow: isLight ? 'drop-shadow(0px 0px 5px rgba(0,0,0,.3))' : 'drop-shadow(0px 0px 5px rgba(0,0,0,.8))',
+  color: isLight ? '#1a1a1a' : '#fff',
+  shadow: isLight ? 'drop-shadow(0px 0px 5px rgba(0,0,0,.1))' : 'drop-shadow(0px 0px 3px rgba(0,0,0,.4))',
   radius
 })
 
@@ -127,7 +134,7 @@ App.propTypes = {
 }
 
 App.defaultProps = {
-  radius: 75,
+  radius: 45,
   themeType: 'light'
 }
 

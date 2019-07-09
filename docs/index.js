@@ -41,8 +41,8 @@ ReactDOM.render(
       title="Boilerplate"
     />
     <MadeByGetapper
-      radius={60}
-      themeType="light"
+      radius={45}
+      themeType="dark"
     />
   </div>,
   document.getElementById('catalog')
