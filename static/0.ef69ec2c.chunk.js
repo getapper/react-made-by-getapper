@@ -1,2 +1,0 @@
-webpackJsonp([0],{663:function(e,t,n){var a=n(5),r=n(34),o=n(231).PageRenderer;o.__esModule&&(o=o.default);var c=r({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:n(664)}},componentWillMount:function(){},render:function(){return a.createElement(o,Object.assign({},this.props,{content:this.state.content}))}});c.__catalog_loader__=!0,e.exports=c},664:function(e,t){e.exports="# React made by Getapper\n"}});
-//# sourceMappingURL=0.ef69ec2c.chunk.js.map

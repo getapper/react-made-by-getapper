@@ -1,4 +1,4 @@
-/*!
+@import url(https://p.typekit.net/p.css?s=1&k=tlv6boq&ht=tk&f=10886&a=12213301&app=typekit&e=css);/*!
 Pure v1.0.0
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
@@ -1518,6 +1518,24 @@ striping:
 .pure-table-horizontal tbody > tr:last-child > td {
     border-bottom-width: 0;
 }
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * futura-pt:
+ *   - http://typekit.com/eulas/000000000000000000010096
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-07-09 15:43:51 UTC"}*/
+
+@font-face {
+  font-family:"futura-pt";
+  src:url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-style:normal;font-weight:300;
+}
 .github-corner svg {
     z-index: 1000;
 }
@@ -1525,4 +1543,4 @@ striping:
 /* TODO: insert main styles of your demo here */
 /* TODO: insert default styles of your component here for easy access */
 
-/*# sourceMappingURL=catalog.acaedefa.css.map*/
+/*# sourceMappingURL=catalog.a22d009f.css.map*/
