@@ -3,7 +3,7 @@
   "description": "React Made-By-Getapper Widget",
   "author": "Getapper",
   "user": "antoniogiordano",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "start": "catalog start docs",
     "test": "jest",
