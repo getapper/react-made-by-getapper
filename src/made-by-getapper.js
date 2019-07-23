@@ -120,20 +120,26 @@ const theme = (radius, isLight) => ({
 })
 
 const App = ({
+  classes,
   radius,
   themeType
 }) => (
   <ThemeProvider theme={theme(radius, themeType === 'light')}>
-    <StyledComp themeType={themeType} />
+    <StyledComp
+      classes={classes}
+      themeType={themeType}
+    />
   </ThemeProvider>
 )
 
 App.propTypes = {
+  classes: shape({}),
   radius: number,
   themeType: oneOf(['light', 'dark'])
 }
 
 App.defaultProps = {
+  classes: null,
   radius: 45,
   themeType: 'light'
 }
